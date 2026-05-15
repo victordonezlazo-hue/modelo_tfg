@@ -1,8 +1,6 @@
 library(shiny)
 library(dplyr)
 
-setwd('C:/Users/USUARIO/Documents/GitHub/modelo_tfg')
-
 # ── Coeficientes del modelo ────────────────────────────────────────────────────
 coefs <- c(
   "(Intercept)"                                             = -3.856547528,
