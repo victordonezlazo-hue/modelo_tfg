@@ -1,7 +1,7 @@
 library(shiny)
 library(dplyr)
 
-setwd('C:/Users/USUARIO/Documents/GitHub/modelo_pornografia')
+setwd('C:/Users/USUARIO/Documents/GitHub/modelo_tfg')
 
 # ── Coeficientes del modelo ────────────────────────────────────────────────────
 coefs <- c(
@@ -415,7 +415,8 @@ ui <- fluidPage(
                                strong("Aviso: "),
                                "Por motivos obvios, algunas preguntas giran en torno a la sexualidad, la
           percepcion sobre el sexo y otros temas sensibles. Si no te interesa
-          contestar o te resulta incómodo, arriba a la derecha está tu botón de salida."
+          contestar o te resulta incómodo, arriba a la derecha está tu botón de salida. Tus datos no se guardan, por si eso te anima
+                               a quedarte"
                            ),
                            nav_btns(btn_n("btn_start", "Comenzar"))
                        )
