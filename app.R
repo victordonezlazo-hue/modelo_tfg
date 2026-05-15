@@ -707,7 +707,7 @@ grado de acuerdo con las siguientes afirmaciones? Utilizar una escala de 0 a 3, 
                                    strong("regresión logística binaria"),
                                    ". Imagina que estás preocupado porque crees que te va a dar un infarto (Dios no lo quiera) y vas
                                    al médico a quedarte tranquilo.
-    Te miden el colesterol, la presión arterial y el signo del zodiaco. ¿Cómo lo hacen? Pues meten los datos a un modelo como el siguiente,
+    Te miden el colesterol, la presión arterial y el signo del zodiaco, y te dan un resultado ¿Cómo lo hacen? Pues meten los datos a un modelo como el siguiente,
                                    que les devuelve mágicamente una probabilidad"
                                  ),
                                  
