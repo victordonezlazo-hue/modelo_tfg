@@ -702,7 +702,7 @@ grado de acuerdo con las siguientes afirmaciones? Utilizar una escala de 0 a 3, 
                                  tags$summary("¿Cómo se ha calculado esta probabilidad?"),
                                  
                                  tags$p(
-                                   "Como se mencionaba al principio, para dar la probabilidad se utiliza un modelo estadístico
+                                   "Para dar la probabilidad se utiliza un modelo estadístico
     predictivo llamado ",
                                    strong("regresión logística binaria"),
                                    ". Imagina que estás preocupado porque crees que te va a dar un infarto (Dios no lo quiera) y vas
@@ -720,24 +720,25 @@ grado de acuerdo con las siguientes afirmaciones? Utilizar una escala de 0 a 3, 
     $$")),
                                             
                                    tags$p("donde \\(\\beta_{col}\\), \\(\\beta_{pres}\\) y \\(\\beta_{zod}\\) son los «pesos» o la «fuerza» de cada
-                                            variable para determinar la probabilidad. Faltaria hacer el estudio, pero me aventuro a decir
+                                            variable para determinar la probabilidad. Faltaría hacer el estudio, pero me aventuro a decir
                                             que el colesterol tiene más fuerza para predecir infartos que el signo del zodiaco, así que su
                                             \\(\\beta\\) debería ser más grande (incluso es posible que la \\(\\beta\\) del signo del zodiaco sea 0
                                             , lo que significa que no aporta nada para predecir la probabilidad). Y, como es natural, si un peso es negativo, significa que reduce
                                             la probabilidad."),
                                  
                                  tags$p(
-                                   "Esto es en realidad una simplificación, principalmente porque si metes valores a la fórmula anterior
+                                   "Esta es una simplificación del modelo de regresión logística. No es exactamente así, principalmente porque si metes valores a la fórmula anterior
                                    te puede dar un valor que no esté entre 0 y 1, que es lo básico de lo básico para cualquier probabilidad. Lo único
                                    que cambia es que en lugar de la probabilidad, se predice el", tags$em("✨logaritmo natural de la fracción de la probabilidad
                                                                                                              entre 1 menos la probabilidad✨"),"
-                                   , pero si no te gustan las mates no te asustes, porque por lo demás es lo mismo, y la probabilidad también puede sacarse de predecir esa cosa fea."
+                                   , pero si no te gustan las mates no te asustes, porque por lo demás es lo mismo, y la probabilidad también puede sacarse, y de hecho se saca,
+                                   de predecir esa cosa fea."
                                    
                                  ),
                                  tags$p(
                                    "En resumen, el modelo de esta aplicación es igual al de predecir los infartos; algunas respuestas que has dado te han aumentado o bajado poco o
                                    mucho tu probabilidad, y otras no han tenido ningún efecto (por ejemplo la edad de primer acceso a la pornografía no influye, así que si te has quedado
-                                   un rato haciendo flashback para dar una respuesta, no ha servido de mucho, sorry). ¿Cuáles son las variables que más influyen? Pues la que infuye una barbaridad
+                                   un rato haciendo flashback para dar una respuesta, no ha servido de mucho, sorry). ¿Cuáles son las variables que más peso tienen? Pues la que infuye una barbaridad
                                    es la de subir contenidos eróticos a redes para recibir comentarios positivos, si vuelves y pruebas a poner otra cosa el cambio puede ser algo drástico. Más no te cuento,
                                    que se arruina la magia."
                                  )
@@ -752,8 +753,9 @@ grado de acuerdo con las siguientes afirmaciones? Utilizar una escala de 0 a 3, 
         que la probabilidad resultante asume que podrías ser parte de la muestra con la que se entrenó al modelo. Esto es, un joven español de 16 a 29 años que ha consumido pornografía alguna vez en los últimos años."
                                  ),
                                         tags$p("La
-        probabilidad estimada no es una certeza, es el modelo diciendo «con lo que he visto en la muestra original, este individuo con estás características tendría una probabilidad de tanto». Pero no deja de ser una estimación, un
-        estadístico diciéndote «seh, esto puede ser así o no ser así, yo q sé».
+        probabilidad estimada no es una certeza, es el modelo diciendo «con lo que he visto en la muestra original, este individuo con estás características tendría una probabilidad de tanto». Pero no deja de ser una estimación, yo
+        solo soy un
+        estadístico diciéndote «seh, esto puede ser así o no ser así, yo qué sé».
       ")
                                ),
                                
@@ -778,8 +780,8 @@ grado de acuerdo con las siguientes afirmaciones? Utilizar una escala de 0 a 3, 
       "),
       
       tags$p("
-        ¿Qué es entonces probabilidad baja, alta y media? Pues una decisión propia porque quedaba bonito que tuviese un comportamiento de semáforo. Se considera probabilidad media si el valor es superior al 16.46% y alta si empieza a ser más probable que
-        pertenezcas al consumo problemático que al no problemático, o sea, a partir del 50%. Pero no significan mucho, es un poco decorativo.
+        ¿Qué es entonces probabilidad baja, alta y media? Pues una decisión propia porque quedaba bonito que hubiese un comportamiento de semáforo. Se considera probabilidad media si el valor es superior al 16.46% y alta si empieza a ser más probable que
+        pertenezcas al consumo problemático que al no problemático, o sea, a partir del 50%. Pero no significan mucho, es un poco decorativo, el objetivo real es saber si tienes un consumo problemático o no.
       ")
                                ),
                                
